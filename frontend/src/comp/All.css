@@ -1,0 +1,120 @@
+.Nav{
+
+    background-color: gray;
+    margin-top: 1px;
+    color: white;
+    text-align: center;
+
+
+}
+.Nav:hover{
+
+    background-color: white;
+    margin-top: 1px;
+    color: black;
+    text-align: center;
+
+
+}
+.Nav ul li{
+    display: inline;
+    
+}
+.Nav ul li a{
+    text-decoration: none;
+    color:white;
+    margin: 10px;
+    
+    background-color: green;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+.Nav ul li a:hover{
+    color: red;
+    background-color: black;
+}
+
+.Display{
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.Display table {
+    margin: auto;
+    background-color: white;
+    color: black;
+
+}
+
+.Display th {
+    height: 40px;
+    vertical-align: bottom;
+    border: 1px solid black;
+    align-content: center;
+
+  }
+
+
+.Display td {
+    height: 40px;
+    vertical-align: bottom;
+    border: 1px solid black;
+    align-content: center;
+    margin: 0px;
+  }
+
+.Display tr:hover{
+    
+    background-color:gray;
+    color: white;
+
+}
+
+  .Display td a {
+
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+
+  }
+
+  .Display td a:hover {
+
+    background-color: white;
+    color: blue;
+  
+}
+
+.Display button{
+
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.Display button:hover{
+
+    background-color: white;
+    color: black;
+
+}
+
+
+.Add table{
+
+    align-items: center;
+    margin: auto;
+
+    background-color: gray;
+}
+.Add h3{
+    
+    margin-left: 730px;
+}
