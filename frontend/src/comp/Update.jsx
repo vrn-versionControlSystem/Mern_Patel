@@ -30,7 +30,7 @@ const Update = () => {
 
     const fetched_data=async()=>{
 
-      const response= await axios.get(`http://localhost:8000/api/getbyid/${id}`);
+      const response= await axios.get(`https://mern-patel.onrender.com/api/getbyid/${id}`);
 
       setNewObj(response.data);
 
@@ -46,7 +46,7 @@ const Update = () => {
   const submitForm=async(event)=>{
     event.preventDefault();
 
-    await axios.put(`http://localhost:8000/api/update/${id}`, newObj)
+    await axios.put(`https://mern-patel.onrender.com/api/update/${id}`, newObj)
     .then((resp)=>{
       
       console.log(resp);

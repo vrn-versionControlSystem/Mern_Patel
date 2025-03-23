@@ -40,7 +40,7 @@ const Display = () => {
       
 const deleteHandler=async(id)=>{
 
-  await axios.delete(`http://localhost:8000/api/deletebyid/${id}`).then((resp)=>{
+  await axios.delete(`https://mern-patel.onrender.com/api/deletebyid/${id}`).then((resp)=>{
 
    
     

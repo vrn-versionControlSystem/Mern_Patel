@@ -32,7 +32,7 @@ const Add = () => {
   const submitForm=async(event)=>{
     event.preventDefault();
 
-    await axios.post("http://localhost:8000/api/register", newObj)
+    await axios.post("https://mern-patel.onrender.com/api/register", newObj)
     .then((resp)=>{
       
       console.log(resp);
