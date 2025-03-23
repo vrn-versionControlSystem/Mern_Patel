@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import dbConnection from './mvc/DBcon/db.js';
 import CrudRoutes from './mvc/routes/CrudRoutes.js';
 import cors from 'cors';
-
+import path from 'path';
 
 
 
@@ -13,6 +13,8 @@ dbConnection();
 const app=express();
 app.use(express.json());
 app.use(cors());
+const _dirname=path.resolve();
+
 
 
 
@@ -23,5 +25,10 @@ app.listen(PORT, ()=>{
 
 
 app.use('/api', CrudRoutes);
+app.use(express.static(path.join(_dirname, "/frontend/dist")));
+app.get('*', (req, resp)=>{
+    resp.sendFile(path.resolve(_dirname, "frontend", "dist", "index.html" ));
+
+});
 
 
